@@ -1,0 +1,24 @@
+authors:
+  - family-names: Sinibaldi
+    given-names: Alessandro
+cff-version: 1.2.0
+message: "If you use this software, please cite the article from preferred-citation."
+title: fnqs_design
+url: "https://github.com/cqsl/fnqs_design"
+preferred-citation:
+  type: article
+  title: "Designing Strongly Correlated Quantum Phases of Matter with Foundation Neural-Network Quantum States"
+  authors:
+    - family-names: Sinibaldi
+      given-names: Alessandro
+    - family-names: Viteritti
+      given-names: Luciano Loris
+    - family-names: Rende
+      given-names: Riccardo
+    - family-names: Becca
+      given-names: Federico
+    - family-names: Carleo
+      given-names: Giuseppe
+  year: 2026
+  doi: "10.48550/arXiv.2609.40209"
+  url: "https://arxiv.org/abs/2609.40209"
