@@ -1,0 +1,17 @@
+line-length = 120
+
+[lint]
+select = ["E", "W", "F", "I"]
+# Short names like I, O, l follow the physics notation of the papers
+ignore = ["E741"]
+
+[lint.isort]
+known-first-party = ["config", "models", "utils"]
+
+[lint.per-file-ignores]
+# main.py sets environment variables, sys.path and jax.distributed before importing the rest
+"scripts/main.py" = ["E402"]
+# WANDB_SILENT must be set before wandb is imported
+"utils/wandb_logger.py" = ["E402"]
+# Docstrings and messages adapted from NetKet
+"utils/vmc_sr_spin_multiple.py" = ["E501"]

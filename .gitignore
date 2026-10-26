@@ -1,0 +1,4 @@
+.phase_tmp/
+__pycache__/
+.ruff_cache/
+results/

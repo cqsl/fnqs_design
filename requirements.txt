@@ -1,0 +1,14 @@
+# Tested with Python 3.11 and the versions below.
+#
+# NetKet is pinned: the custom drivers in utils/vmc_sr_spin_multiple.py import from
+# the private module netket._src.driver.abstract_variational_driver_old.
+netket==3.22.*
+
+# For GPUs, install jax with CUDA support instead, e.g. `pip install "jax[cuda12]"`.
+jax>=0.8.2
+flax>=0.12.1
+optax>=0.2.8
+numpy>=2.0
+einops>=0.8
+jsonargparse>=4.33
+wandb>=0.18
