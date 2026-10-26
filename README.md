@@ -6,6 +6,9 @@ In this repository, the approach is applied to the frustrated Heisenberg model o
 
 The code is built on [`jax`](https://github.com/jax-ml/jax), [`flax`](https://github.com/google/flax) and [`NetKet`](https://github.com/netket/netket).
 
+[![Slack](https://img.shields.io/badge/slack-chat-green.svg)](https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23666212.svg)](https://doi.org/10.5281/zenodo.23666212)
+
 ## Content of the repository
 
 - **models**: the Foundation Vision Transformer, which takes the couplings and the spin configuration as input, with its sign structure initialized by a classical phase.
