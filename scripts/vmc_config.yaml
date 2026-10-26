@@ -1,0 +1,57 @@
+seed: 42
+output_dir: 'results'  # Used when wandb.log is False, relative to the repo root
+wandb:
+    log: False
+    log_every: 1
+    project: 'fnqs'
+lattice:
+    L: 6
+    pbc: True
+hamiltonian:
+    J1: 1.0
+    n_systems: 1024
+    J2s_initial: [0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05]
+    side_length: 0.1
+sampling:
+    n_samples: 8192
+    n_chains: 8192
+    n_discard_per_chain: 0
+    n_chunks: 4
+    chunk_size: 4096
+    d_max: 1
+transformer:
+    num_layers: 6
+    d_model: 72
+    heads: 12
+    b: 1
+    tras_inv: True
+    two_dim: True
+    complex: True
+    alpha0: 1.0
+    time_reversal: True
+optimization:
+    lr: 0.005
+    n_iter: 10000
+    diag_shift: 1e-4
+    mode: 'real'
+    save_every: 1000
+    starting_idx: 0
+    early_stopping: True
+    early_stopping_min_steps: 1
+    early_stopping_patience: 20
+    early_stopping_min_absolute_delta: 1e-4
+optimization_couplings:
+    n_steps: 400
+    lr: 0.1
+    use_cosine_schedule: False
+    decay_steps: 100
+    min_lr: 0.1
+    diag_shift: 1e-4
+    ema_beta: 0.9
+    n_iter: 500
+    n_reps_grad: 4
+    seed_coupling: 0
+    mu: 0.95
+    beta: 0.995
+    march_eps: 1e-8
+    n_therm: 1
